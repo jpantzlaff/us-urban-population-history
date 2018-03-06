@@ -53,7 +53,7 @@ function updateLegend(mode, min, max, minArea, maxArea) {
         /* Set the "maximum increase" text value in the legend to indicate the percentage threshold for the largest blue circle size, keeping three significant figures of the percentage and adding digit grouping as necessary */
         $('#legend-max').html('&ge;&nbsp;' + Number(Number.parseFloat(max * 100).toPrecision(3)).toLocaleString() + '%');
         /* Set the "maximum decrease" text value in the legend to indicate the percentage threshold for the largest red-orange circle size, keeping three significant figures of the percentage and adding digit grouping as necessary */
-        $('#legend-max-decrease').html('&le; ' + (((1 / max) - 1) * 100).toFixed(0) + '%');
+        $('#legend-max-decrease').html('&le;&nbsp;' + (((1 / max) - 1) * 100).toFixed(0) + '%');
     }
 }
 
